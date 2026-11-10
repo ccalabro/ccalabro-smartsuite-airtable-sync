@@ -246,6 +246,8 @@ class FakeSmartSuite:
         if method == "POST" and path == base + "/add_field/":
             if "field_position" not in data:
                 return _resp({"field_position": ["This field is required."]}, 400)
+            if not (data["field_position"] or {}).get("prev_sibling_slug"):
+                return _resp({"field_position": {"prev_sibling_slug": ["This field may not be null."]}}, 400)
             self.structure.append(copy.deepcopy(data["field"]))
             return _resp(None)
         if method == "POST" and path == base + "/records/list/":

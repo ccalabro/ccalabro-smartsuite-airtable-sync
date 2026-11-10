@@ -36,9 +36,13 @@ class SmartSuite:
 
     def add_text_field(self, label: str) -> None:
         slug = "s" + "".join(secrets.choice(string.ascii_lowercase + string.digits) for _ in range(9))
+        # SmartSuite wants the slug of the field the new one goes after, and
+        # rejects null, so put it after the last field in the table.
+        structure = self.table().get("structure") or []
+        prev = structure[-1]["slug"] if structure else "title"
         self.http.request("POST", f"{self._path}/add_field/", body={
             "field": {"slug": slug, "label": label, "field_type": "textfield", "params": {}, "is_new": True},
-            "field_position": {"prev_sibling_slug": None},
+            "field_position": {"prev_sibling_slug": prev},
             "auto_fill_structure_layout": True,
         })
 
