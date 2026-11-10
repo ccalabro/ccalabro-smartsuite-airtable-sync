@@ -150,3 +150,11 @@ Assumed, and worth checking on the first live run:
 * It reads both tables in full each run. That is fine up to a few thousand records. Past that it should filter on last modified time.
 * Last edit wins is per record. If two people edit different fields of the same record between runs, the older edit is lost. A stored snapshot would fix that, and it's the first thing I'd add if this gets real use.
 * One table pair per config file. Run it once per pair for more.
+
+## Publishing
+
+The repo is ready with a few clean commits on `main`. To push it:
+
+```
+git remote add origin git@github.com:ccalabro/smartsuite-airtable-sync.git && git push -u origin main
+```
