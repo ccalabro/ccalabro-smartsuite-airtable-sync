@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Name",
+    "type": "singleLineText"
+  },
+  {
+    "name": "Status",
+    "type": "singleSelect",
+    "options": {
+      "choices": [
+        {
+          "id": "sel0",
+          "name": "Planned"
+        },
+        {
+          "id": "sel1",
+          "name": "In progress"
+        },
+        {
+          "id": "sel2",
+          "name": "Blocked"
+        },
+        {
+          "id": "sel3",
+          "name": "Done"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Owner",
+    "type": "email"
+  },
+  {
+    "name": "Budget",
+    "type": "currency",
+    "options": {
+      "precision": 2,
+      "symbol": "$"
+    }
+  },
+  {
+    "name": "Start",
+    "type": "date",
+    "options": {
+      "dateFormat": {
+        "name": "iso",
+        "format": "YYYY-MM-DD"
+      }
+    }
+  },
+  {
+    "name": "Kickoff call",
+    "type": "dateTime",
+    "options": {
+      "timeZone": "utc"
+    }
+  },
+  {
+    "name": "Billable",
+    "type": "checkbox",
+    "options": {
+      "icon": "check",
+      "color": "greenBright"
+    }
+  },
+  {
+    "name": "Tags",
+    "type": "multipleSelects",
+    "options": {
+      "choices": [
+        {
+          "id": "tag0",
+          "name": "Web"
+        },
+        {
+          "id": "tag1",
+          "name": "Mobile"
+        },
+        {
+          "id": "tag2",
+          "name": "Data"
+        },
+        {
+          "id": "tag3",
+          "name": "Retainer"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Notes",
+    "type": "multilineText"
+  },
+  {
+    "name": "Website",
+    "type": "url"
+  },
+  {
+    "name": "Last Modified",
+    "type": "lastModifiedTime",
+    "options": {
+      "isValid": true,
+      "referencedFieldIds": null
+    }
+  }
+]

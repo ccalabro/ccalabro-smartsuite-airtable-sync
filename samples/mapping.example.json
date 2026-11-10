@@ -1,0 +1,62 @@
+{
+  "_comment": "Left: Airtable field name. Right: SmartSuite field label. See the README for the types.",
+  "fields": [
+    {
+      "airtable": "Name",
+      "smartsuite": "Title",
+      "type": "text"
+    },
+    {
+      "airtable": "Status",
+      "smartsuite": "Status",
+      "type": "select"
+    },
+    {
+      "airtable": "Owner",
+      "smartsuite": "Owner",
+      "type": "email"
+    },
+    {
+      "airtable": "Budget",
+      "smartsuite": "Budget",
+      "type": "number"
+    },
+    {
+      "airtable": "Start",
+      "smartsuite": "Start",
+      "type": "date"
+    },
+    {
+      "airtable": "Kickoff call",
+      "smartsuite": "Kickoff call",
+      "type": "datetime"
+    },
+    {
+      "airtable": "Billable",
+      "smartsuite": "Billable",
+      "type": "checkbox"
+    },
+    {
+      "airtable": "Tags",
+      "smartsuite": "Tags",
+      "type": "multiselect"
+    },
+    {
+      "airtable": "Notes",
+      "smartsuite": "Notes",
+      "type": "textarea"
+    },
+    {
+      "airtable": "Website",
+      "smartsuite": "Website",
+      "type": "url"
+    }
+  ],
+  "airtable_link_field": "SmartSuite ID",
+  "airtable_modified_field": "Last Modified",
+  "smartsuite_link_field": "Airtable ID",
+  "tie_winner": "smartsuite",
+  "deletions": "report",
+  "match_unlinked_on": "Name",
+  "max_deletes": 5
+}

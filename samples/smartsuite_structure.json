@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "title",
+    "label": "Title",
+    "field_type": "recordtitlefield",
+    "params": {
+      "required": true
+    }
+  },
+  {
+    "slug": "status",
+    "label": "Status",
+    "field_type": "statusfield",
+    "params": {
+      "choices": [
+        {
+          "value": "st0",
+          "label": "Planned",
+          "value_color": "#0C41F3",
+          "value_order": 0
+        },
+        {
+          "value": "st1",
+          "label": "In progress",
+          "value_color": "#0C41F3",
+          "value_order": 1
+        },
+        {
+          "value": "st2",
+          "label": "Blocked",
+          "value_color": "#0C41F3",
+          "value_order": 2
+        },
+        {
+          "value": "st3",
+          "label": "Done",
+          "value_color": "#0C41F3",
+          "value_order": 3
+        }
+      ]
+    }
+  },
+  {
+    "slug": "s1a2b3c4d5",
+    "label": "Owner",
+    "field_type": "emailfield",
+    "params": {}
+  },
+  {
+    "slug": "s2b3c4d5e6",
+    "label": "Budget",
+    "field_type": "currencyfield",
+    "params": {}
+  },
+  {
+    "slug": "s3c4d5e6f7",
+    "label": "Start",
+    "field_type": "datefield",
+    "params": {}
+  },
+  {
+    "slug": "s4d5e6f7a8",
+    "label": "Kickoff call",
+    "field_type": "datefield",
+    "params": {}
+  },
+  {
+    "slug": "s5e6f7a8b9",
+    "label": "Billable",
+    "field_type": "yesnofield",
+    "params": {}
+  },
+  {
+    "slug": "s6f7a8b9c0",
+    "label": "Tags",
+    "field_type": "multipleselectfield",
+    "params": {
+      "choices": [
+        {
+          "value": "tg0",
+          "label": "Web",
+          "value_color": "#0C41F3",
+          "value_order": 0
+        },
+        {
+          "value": "tg1",
+          "label": "Mobile",
+          "value_color": "#0C41F3",
+          "value_order": 1
+        },
+        {
+          "value": "tg2",
+          "label": "Data",
+          "value_color": "#0C41F3",
+          "value_order": 2
+        },
+        {
+          "value": "tg3",
+          "label": "Retainer",
+          "value_color": "#0C41F3",
+          "value_order": 3
+        }
+      ]
+    }
+  },
+  {
+    "slug": "s7a8b9c0d1",
+    "label": "Notes",
+    "field_type": "textareafield",
+    "params": {}
+  },
+  {
+    "slug": "s8b9c0d1e2",
+    "label": "Website",
+    "field_type": "linkfield",
+    "params": {}
+  },
+  {
+    "slug": "first_created",
+    "label": "First Created",
+    "field_type": "firstcreatedfield",
+    "params": {}
+  },
+  {
+    "slug": "last_updated",
+    "label": "Last Updated",
+    "field_type": "lastupdatedfield",
+    "params": {}
+  }
+]

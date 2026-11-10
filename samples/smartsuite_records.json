@@ -1,0 +1,57 @@
+[
+  {
+    "Title": "Pine Street Bakery shop",
+    "Status": "Done",
+    "Owner": "li@example.com",
+    "Budget": 6400,
+    "Start": "2026-06-02",
+    "Billable": true,
+    "Tags": [
+      "Web"
+    ],
+    "Website": "https://pinestreet.example.com"
+  },
+  {
+    "Title": "Atlas CRM migration",
+    "Status": "In progress",
+    "Owner": "maya@example.com",
+    "Budget": 22000,
+    "Start": "2026-08-20",
+    "Kickoff call": "2026-08-20T17:30:00Z",
+    "Billable": true,
+    "Tags": [
+      "Data"
+    ]
+  },
+  {
+    "Title": "Northwind analytics audit",
+    "Status": "Done",
+    "Owner": "sam@example.com",
+    "Budget": 4000,
+    "Start": "2026-07-07",
+    "Tags": [
+      "Data"
+    ]
+  },
+  {
+    "Title": "Onboarding checklist",
+    "Status": "In progress",
+    "Owner": "li@example.com",
+    "Notes": "Started in SmartSuite."
+  },
+  {
+    "Title": "Q1 hiring plan",
+    "Status": "Planned",
+    "Owner": "maya@example.com",
+    "Start": "2027-01-05"
+  },
+  {
+    "Title": "Vendor security reviews",
+    "Status": "Blocked",
+    "Owner": "sam@example.com",
+    "Budget": 1500,
+    "Tags": [
+      "Retainer"
+    ]
+  }
+]

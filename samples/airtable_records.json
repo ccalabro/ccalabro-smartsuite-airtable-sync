@@ -1,0 +1,88 @@
+[
+  {
+    "Name": "Harbor Dental site refresh",
+    "Status": "In progress",
+    "Owner": "maya@example.com",
+    "Budget": 12000,
+    "Start": "2026-10-01",
+    "Kickoff call": "2026-10-01T15:00:00.000Z",
+    "Billable": true,
+    "Tags": [
+      "Web"
+    ],
+    "Notes": "New booking flow.\nKeep the old blog URLs.",
+    "Website": "https://harbor-dental.example.com"
+  },
+  {
+    "Name": "Fleetly driver app",
+    "Status": "Planned",
+    "Owner": "sam@example.com",
+    "Budget": 48000,
+    "Start": "2026-12-01",
+    "Billable": true,
+    "Tags": [
+      "Mobile",
+      "Data"
+    ]
+  },
+  {
+    "Name": "Quarterly metrics pipeline",
+    "Status": "Blocked",
+    "Owner": "li@example.com",
+    "Budget": 9500.5,
+    "Start": "2026-09-15",
+    "Tags": [
+      "Data"
+    ],
+    "Notes": "Waiting on warehouse access."
+  },
+  {
+    "Name": "Greenline retainer",
+    "Status": "In progress",
+    "Owner": "maya@example.com",
+    "Budget": 3000,
+    "Billable": true,
+    "Tags": [
+      "Retainer"
+    ]
+  },
+  {
+    "Name": "Internal wiki cleanup",
+    "Status": "Planned",
+    "Owner": "sam@example.com"
+  },
+  {
+    "Name": "Pine Street Bakery shop",
+    "Status": "Done",
+    "Owner": "li@example.com",
+    "Budget": 6400,
+    "Start": "2026-06-02",
+    "Billable": true,
+    "Tags": [
+      "Web"
+    ],
+    "Website": "https://pinestreet.example.com"
+  },
+  {
+    "Name": "Atlas CRM migration",
+    "Status": "In progress",
+    "Owner": "maya@example.com",
+    "Budget": 22000,
+    "Start": "2026-08-20",
+    "Kickoff call": "2026-08-20T17:30:00.000Z",
+    "Billable": true,
+    "Tags": [
+      "Data"
+    ]
+  },
+  {
+    "Name": "Northwind analytics audit",
+    "Status": "Done",
+    "Owner": "sam@example.com",
+    "Budget": 4000,
+    "Start": "2026-07-07",
+    "Tags": [
+      "Data"
+    ]
+  }
+]
