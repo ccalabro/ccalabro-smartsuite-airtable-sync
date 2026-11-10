@@ -38,7 +38,10 @@ def need(*names: str) -> dict[str, str]:
 def syncer_from_env(log=print) -> Syncer:
     env = need("AIRTABLE_TOKEN", "AIRTABLE_BASE_ID", "AIRTABLE_TABLE",
                "SMARTSUITE_API_KEY", "SMARTSUITE_WORKSPACE_ID", "SMARTSUITE_TABLE_ID")
-    cfg = Config.load(os.environ.get("MAPPING_FILE") or ROOT / "mapping.json")
+    mapping = Path(os.environ.get("MAPPING_FILE") or ROOT / "mapping.json")
+    if not mapping.exists():
+        sys.exit(f"{mapping.name} not found. Copy the example first: cp samples/mapping.example.json mapping.json")
+    cfg = Config.load(mapping)
     at = Airtable(env["AIRTABLE_TOKEN"], env["AIRTABLE_BASE_ID"], env["AIRTABLE_TABLE"])
     ss = SmartSuite(env["SMARTSUITE_API_KEY"], env["SMARTSUITE_WORKSPACE_ID"], env["SMARTSUITE_TABLE_ID"])
     return Syncer(at, ss, cfg, log=log)
